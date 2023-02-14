@@ -1,5 +1,5 @@
 .sidebar {
-  left: -10rem;
+  left: -$aside-width;
   width: 10rem;
 }
 .sidebar.on {
@@ -12,7 +12,7 @@
   left: 11.5rem;
 }
 .search-form-wrap {
-  right: 8rem;
+  right: 10rem;
 }
 @media (min-width: 768px) {
   .outer,
@@ -28,10 +28,10 @@
     left: 0;
   }
   .sidebar.on {
-    left: -8rem;
+    left: -10rem;
   }
   .content {
-    transform: translateX(8rem);
+    transform: translateX(10rem);
   }
   .content.on {
     transform: translateX(0);
