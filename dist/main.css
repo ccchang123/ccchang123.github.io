@@ -595,46 +595,36 @@ button {
 
 @media (min-width: 768px) {
     .cover {
-    margin-bottom: 0;
-    height: 100%
-}
-
-.outer,
-.wrap {
-    width: 70rem;
-    padding-right: 0;
-    padding-left: 0
-}
-
-.local-search {
-    width: 70rem
-}
-
-.content.on {
+		margin-bottom: 0;
+		height: 100%
+	}
+	.outer,
+	.wrap {
+		width: 70rem;
+		padding-right: 0;
+		padding-left: 0
+	}
+	.local-search {
+		width: 70rem
+	}
+	.content.on {
     transform: none
-}
-
-
+	}
 }
 
 @media (max-width: 768px) {
     .cover .forkMe {
-    display: none
-}
-
-.content.on {
-    margin-left: -1px!important
-}
-
-.sidebar {
-    background-color: #403e3e
-}
-
-.navbar-toggle {
-    transform: scale(1.1)
-}
-
-
+		display: none
+	}
+	.content.on {
+		margin-left: -1px!important
+	}
+	.sidebar {
+		background-color: #403e3e
+	}
+	.navbar-toggle {
+		transform: scale(1.1)
+	}
 }
 
 .list-unstyled {
