@@ -241,11 +241,11 @@ body.darkmode .archive-year-wrap .archive-year,
 body.darkmode .article-category .article-category-link,
 body.darkmode .article-date,
 body.darkmode .article-header .article-title,
-body.darkmode .article-tag-list: before,
+body.darkmode .article-tag-list:before,
 body.darkmode .category-list .category-list-item i,
-body.darkmode .category-list a: hover .category-list-item,
+body.darkmode .category-list a:hover .category-list-item,
 body.darkmode .share-outer i,
-body.darkmode .tag-list>.tag-list-item: before,
+body.darkmode .tag-list>.tag-list-item:before,
 body.darkmode a.toc-link {
     color: #e6e6e6!important
 }
@@ -314,11 +314,11 @@ a {
     color: #0681d0
 }
 
-a: hover {
+a:hover {
     color: #19a1f8
 }
 
-a: active {
+a:active {
     color: #067bc6
 }
 
@@ -471,15 +471,15 @@ button {
     color: #5c6b72
 }
 
-.article-entry blockquote>: first-child {
+.article-entry blockquote>:first-child {
     margin-top: 0
 }
 
-.article-entry blockquote>: last-child {
+.article-entry blockquote>:last-child {
     margin-bottom: 0
 }
 
-.article-entry blockquote footer cite: before {
+.article-entry blockquote footer cite:before {
     content: "—";
     padding: 0 .5rem
 }
@@ -556,11 +556,11 @@ button {
     opacity: .5
 }
 
-.navbar-toggle: hover {
+.navbar-toggle:hover {
     opacity: 1
 }
 
-.navbar-toggle: before {
+.navbar-toggle:before {
     content: "\ee09";
     font-family: remixicon;
     font-size: larger
@@ -576,10 +576,10 @@ button {
     min-height: calc(100% - 157px)
 }
 
-.outer: after,
-.outer: before,
-.wrap: after,
-.wrap: before {
+.outer:after,
+.outer:before,
+.wrap:after,
+.wrap:before {
     content: "";
     display: table;
     clear: both
@@ -678,11 +678,11 @@ button {
     color: #403e3e
 }
 
-.categories-box a: hover {
+.categories-box a:hover {
     opacity: .8
 }
 
-.categories-box a: before {
+.categories-box a:before {
     content: "\efde";
     font-family: remixicon;
     margin-right: .5rem;
@@ -710,15 +710,15 @@ button {
     padding-bottom: 0
 }
 
-.archive-list-count: before,
-.category-list-count: before,
-.tag-list-count: before {
+.archive-list-count:before,
+.category-list-count:before,
+.tag-list-count:before {
     content: "("
 }
 
-.archive-list-count: after,
-.category-list-count: after,
-.tag-list-count: after {
+.archive-list-count:after,
+.category-list-count:after,
+.tag-list-count:after {
     content: ")"
 }
 
@@ -735,7 +735,7 @@ button {
     font-size: 120%
 }
 
-.tag-list>.tag-list-item: before {
+.tag-list>.tag-list-item:before {
     content: "\eec3";
     font-family: remixicon;
     margin-right: .5rem;
@@ -759,7 +759,7 @@ button {
     transition: .2s
 }
 
-.tag-list>.tag-list-item .tag-list-link: hover {
+.tag-list>.tag-list-item .tag-list-link:hover {
     transform: scale(1.1)
 }
 
@@ -837,7 +837,7 @@ button {
     animation: down 1s linear infinite
 }
 
-.cover-learn-more a>i: hover {
+.cover-learn-more a>i:hover {
     color: #1e3e3f
 }
 
@@ -967,7 +967,7 @@ button {
     cursor: pointer
 }
 
-.local-search-close: before {
+.local-search-close:before {
     font-size: 150%;
     content: "\eb52";
     font-family: remixicon
@@ -1028,7 +1028,7 @@ button {
     color: #000
 }
 
-.article .sea-center: after {
+.article .sea-center:after {
     border-bottom: 2px dashed #cce5ff;
     content: "";
     width: 100px;
@@ -1051,14 +1051,14 @@ button {
     transform: translateY(-8px)
 }
 
-.article-meta: after,
-.article-meta: before {
+.article-meta:after,
+.article-meta:before {
     content: "";
     display: table;
     clear: both
 }
 
-.article-date: before {
+.article-date:before {
     content: "\eaf2";
     margin-right: .15rem;
     font-family: remixicon;
@@ -1070,7 +1070,7 @@ button {
     margin-left: 1.5rem
 }
 
-.article-category: before {
+.article-category:before {
     content: "\efde";
     font-family: remixicon;
     margin-right: .15rem;
@@ -1088,8 +1088,8 @@ button {
     color: #403e3e
 }
 
-.article-entry: after,
-.article-entry: before {
+.article-entry:after,
+.article-entry:before {
     content: "";
     display: table;
     clear: both
@@ -1166,8 +1166,8 @@ button {
     font-size: 20px
 }
 
-.article-footer: after,
-.article-footer: before {
+.article-footer:after,
+.article-footer:before {
     content: "";
     display: table;
     clear: both
@@ -1191,7 +1191,7 @@ button {
     margin: 0
 }
 
-.article-tag-list: before {
+.article-tag-list:before {
     color: #5d5a5a;
     content: "\eec3";
     font-family: remixicon;
@@ -1221,7 +1221,7 @@ button {
     float: right
 }
 
-.article-comment-link: before {
+.article-comment-link:before {
     content: "\ee0d";
     font-family: remixicon;
     padding-right: 8px
@@ -1233,7 +1233,7 @@ button {
     margin-left: 20px
 }
 
-.article-share-link: before {
+.article-share-link:before {
     content: "\ef76";
     font-family: remixicon;
     padding-right: 6px
@@ -1246,8 +1246,8 @@ button {
     border-top: .1rem solid #eee
 }
 
-.article-nav: after,
-.article-nav: before {
+.article-nav:after,
+.article-nav:before {
     content: "";
     display: table;
     clear: both
@@ -1303,8 +1303,8 @@ button {
     line-height: 3.6rem
 }
 
-.article-share-links: after,
-.article-share-links: before {
+.article-share-links:after,
+.article-share-links:before {
     content: "";
     display: table;
     clear: both
@@ -1324,53 +1324,53 @@ button {
     text-decoration: none
 }
 
-.article-share-facebook: before,
-.article-share-google: before,
-.article-share-pinterest: before,
-.article-share-twitter: before {
+.article-share-facebook:before,
+.article-share-google:before,
+.article-share-pinterest:before,
+.article-share-twitter:before {
     font-size: 20px;
     font-family: remixicon
 }
 
-.article-share-facebook: hover,
-.article-share-google: hover,
-.article-share-pinterest: hover,
-.article-share-twitter: hover {
+.article-share-facebook:hover,
+.article-share-google:hover,
+.article-share-pinterest:hover,
+.article-share-twitter:hover {
     color: #fff
 }
 
-.article-share-twitter: before {
+.article-share-twitter:before {
     content: "068"
 }
 
-.article-share-twitter: hover {
+.article-share-twitter:hover {
     background: #00aced;
     text-shadow: 0 1px #008abe
 }
 
-.article-share-facebook: before {
+.article-share-facebook:before {
     content: "\ec30"
 }
 
-.article-share-facebook: hover {
+.article-share-facebook:hover {
     background: #3b5998;
     text-shadow: 0 1px #2f477a
 }
 
-.article-share-pinterest: before {
+.article-share-pinterest:before {
     content: "\eea8"
 }
 
-.article-share-pinterest: hover {
+.article-share-pinterest:hover {
     background: #cb2027;
     text-shadow: 0 1px #a21a1f
 }
 
-.article-share-google: before {
+.article-share-google:before {
     content: "\ed15"
 }
 
-.article-share-google: hover {
+.article-share-google:hover {
     background: #dd4b39;
     text-shadow: 0 1px #be3221
 }
@@ -1444,7 +1444,7 @@ a.toc-link {
     z-index: 996
 }
 
-.toc-link: before {
+.toc-link:before {
     background-color: #cce5ff;
     content: " ";
     display: inline-block;
@@ -1455,7 +1455,7 @@ a.toc-link {
     width: 2px
 }
 
-.is-active-link: before {
+.is-active-link:before {
     background-color: #3d85c6
 }
 
@@ -1505,14 +1505,14 @@ a.toc-link {
     margin-left: 0
 }
 
-.article-albums-photos: after,
-.article-albums-photos: before {
+.article-albums-photos:after,
+.article-albums-photos:before {
     content: "";
     display: table;
     clear: both
 }
 
-.article-albums-photos: after {
+.article-albums-photos:after {
     content: "";
     flex-grow: 999999999
 }
@@ -1556,7 +1556,7 @@ a.toc-link {
         transform: translateY(100%);
         transition: all .3s ease-in-out
     }
-    .article-albums-item: hover .article-albums-caption {
+    .article-albums-item:hover .article-albums-caption {
         opacity: 1;
         transform: translateY(0)
     }
@@ -1700,8 +1700,8 @@ a.toc-link {
     position: relative
 }
 
-.archives-wrap: after,
-.archives-wrap: before {
+.archives-wrap:after,
+.archives-wrap:before {
     content: "";
     display: table;
     clear: both
@@ -1727,7 +1727,7 @@ a.toc-link {
     display: inline-block
 }
 
-.archive-year-wrap .archive-year: after {
+.archive-year-wrap .archive-year:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1743,8 +1743,8 @@ a.toc-link {
     padding-left: 3rem
 }
 
-.archives: after,
-.archives: before {
+.archives:after,
+.archives:before {
     content: "";
     display: table;
     clear: both
@@ -1782,7 +1782,7 @@ a.toc-link {
     display: block
 }
 
-.archive-article-date: before {
+.archive-article-date:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1806,8 +1806,8 @@ a.toc-link {
     font-size: 115%
 }
 
-.page-nav: after,
-.page-nav: before {
+.page-nav:after,
+.page-nav:before {
     content: "";
     display: table;
     clear: both
@@ -1971,8 +1971,8 @@ a.toc-link {
     background: rgba(0, 0, 0, .1)
 }
 
-.article-entry .highlight::-webkit-scrollbar: hover,
-.article-entry pre::-webkit-scrollbar: hover {
+.article-entry .highlight::-webkit-scrollbar:hover,
+.article-entry pre::-webkit-scrollbar:hover {
     background: rgba(0, 0, 0, .2)
 }
 
@@ -1982,8 +1982,8 @@ a.toc-link {
     border-radius: 6px
 }
 
-.article-entry .highlight::-webkit-scrollbar-thumb: hover,
-.article-entry pre::-webkit-scrollbar-thumb: hover {
+.article-entry .highlight::-webkit-scrollbar-thumb:hover,
+.article-entry pre::-webkit-scrollbar-thumb:hover {
     -ms-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25);
     -o-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25);
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25);
@@ -2048,13 +2048,13 @@ a.toc-link {
     margin-bottom: 1em
 }
 
-.article-entry .highlight figcaption: after,
-.article-entry .highlight figcaption: before {
+.article-entry .highlight figcaption:after,
+.article-entry .highlight figcaption:before {
     content: "";
     display: table
 }
 
-.article-entry .highlight figcaption: after {
+.article-entry .highlight figcaption:after {
     clear: both
 }
 
@@ -2130,7 +2130,7 @@ sans-serif;
     font-weight: 400
 }
 
-.article-entry .gist .gist-file .gist-meta a: hover {
+.article-entry .gist .gist-file .gist-meta a:hover {
     text-decoration: underline
 }
 
@@ -2246,7 +2246,7 @@ pre .id {
     box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .15)
 }
 
-.macbook .macbook-keyboard: before {
+.macbook .macbook-keyboard:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -2354,8 +2354,8 @@ pre .id {
     cursor: pointer
 }
 
-#reward-btn: active,
-#reward-btn: hover {
+#reward-btn:active,
+#reward-btn:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2), 0 4px 15px rgba(0, 0, 0, .2)
 }
 
@@ -2499,7 +2499,7 @@ pre .id {
     color: #36adf9
 }
 
-.share-outer: hover {
+.share-outer:hover {
     transform: none;
     cursor: pointer
 }
@@ -2562,7 +2562,7 @@ pre .id {
     color: ocean
 }
 
-.share-icons a: hover {
+.share-icons a:hover {
     transform: scale(1.2)
 }
 
@@ -2612,8 +2612,8 @@ pre .id {
     font-size: 24px
 }
 
-.wx-share-modal .modal-close: active,
-.wx-share-modal .modal-close: hover {
+.wx-share-modal .modal-close:active,
+.wx-share-modal .modal-close:hover {
     color: rgba(0, 0, 0, .4)
 }
 
@@ -2661,7 +2661,7 @@ pre .id {
     height: 40px
 }
 
-#friends_link .friends_li a: hover {
+#friends_link .friends_li a:hover {
     background-color: rgba(6, 129, 208, .15)
 }
 
@@ -2711,7 +2711,7 @@ pre .id {
     cursor: pointer
 }
 
-.navbar .nav .nav-item-link: hover {
+.navbar .nav .nav-item-link:hover {
     opacity: .8;
     background-color: #403e3e
 }
@@ -2765,8 +2765,8 @@ pre .id {
     transition: opacity 1s ease
 }
 
-.todark: hover,
-.totop: hover {
+.todark:hover,
+.totop:hover {
     opacity: 1
 }
 
@@ -2774,7 +2774,7 @@ pre .id {
     margin-bottom: .8rem
 }
 
-.totop: hover>i {
+.totop:hover>i {
     -webkit-animation: rocket .3s ease-in-out;
     animation: rocket .3s ease-in-out
 }
