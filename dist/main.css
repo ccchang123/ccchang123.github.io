@@ -1,4 +1,4 @@
-html {
+.cover-innerhtml {
 	line-height: 1.15
 }
 
@@ -809,7 +809,7 @@ button {
 
 .cover-inner,
 .cover-inner a {
-    color: #ff4;
+    color: #272727;
     text-decoration: none
 }
 
