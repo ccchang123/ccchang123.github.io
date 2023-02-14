@@ -799,15 +799,7 @@ button {
 
 .cover-inner #subtitle-box,
 .cover-inner h1 {
-    font-family: Titillium Web,
-PingFang SC,
-Hiragino Sans GB,
-Microsoft JhengHei,
-Microsoft YaHei,
-Helvetica Neue,
-Helvetica,
-Arial,
-sans-serif
+    font-family: Titillium Web,PingFang SC,Hiragino Sans GB,Microsoft JhengHei,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif
 }
 
 .cover-inner #subtitle-box {
@@ -2012,11 +2004,7 @@ a.toc-link {
 
 .article-entry code,
 .article-entry pre {
-    font-family: Consolas,
-Monaco,
-Andale Mono,
-Ubuntu Mono,
-monospace
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace
 }
 
 .article-entry code {
@@ -2099,11 +2087,7 @@ monospace
 
 .article-entry .gist .gist-file {
     border: none;
-    font-family: Source Code Pro,
-Consolas,
-Monaco,
-Menlo,
-monospace;
+    font-family: Source Code Pro,Consolas,Monaco,Menlo,monospace;
     margin: 0
 }
 
