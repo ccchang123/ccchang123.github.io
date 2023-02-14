@@ -531,9 +531,9 @@ button {
 .sidebar {
     position: fixed;
     z-index: 9;
-    left: -10rem;
+    left: -8rem;
     bottom: 0;
-    width: 10rem;
+    width: 8rem;
     height: 100%;
     background-color: rgba(0, 0, 0, .8)
 }
