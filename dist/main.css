@@ -228,7 +228,7 @@ body.darkmode {
 }
 
 body.darkmode * {
-    color: #5B5B5B
+    color: #2F2F2F
 }
 
 body.darkmode .article-entry code {
@@ -809,7 +809,7 @@ button {
 
 .cover-inner,
 .cover-inner a {
-    color: #5B5B5B;
+    color: #ADADAD;
     text-decoration: none
 }
 
