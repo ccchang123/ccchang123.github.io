@@ -531,7 +531,7 @@ button {
 .sidebar {
     position: fixed;
     z-index: 9;
-    left: -8rem;
+    left: -10rem;
     bottom: 0;
     width: 10rem;
     height: 100%;
