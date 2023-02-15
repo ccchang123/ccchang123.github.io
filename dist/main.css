@@ -49,7 +49,8 @@ abbr[title] {
 	text-decoration: underline dotted
 }
 
-b,strong {
+b,
+strong {
 	font-weight:bolder
 }
 
@@ -120,10 +121,10 @@ button::-moz-focus-inner {
 	padding: 0;
 }
 
-[type=button]-moz-focusring
-,[type=reset]-moz-focusring
-,[type=submit]-moz-focusring
-,button:-moz-focusring {
+[type=button]-moz-focusring,
+[type=reset]-moz-focusring,
+[type=submit]-moz-focusring,
+button:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
 
@@ -458,7 +459,7 @@ button {
     white-space: nowrap
 }
 
-.article-entry table td: first-child {
+.article-entry table td:first-child {
     white-space: nowrap
 }
 
@@ -658,8 +659,8 @@ button {
     border-bottom: 1px solid #eee
 }
 
-.categories-box ol li: last-child,
-.categories-box ul li: last-child {
+.categories-box ol li:last-child,
+.categories-box ul li:last-child {
     margin-bottom: 0;
     border-bottom: 0 solid #000
 }
@@ -809,7 +810,7 @@ button {
 
 .cover-inner,
 .cover-inner a {
-    color: #ADADAD;
+    color: #000000a6;
     text-decoration: none
 }
 
@@ -987,7 +988,7 @@ button {
     padding: 1.5rem 0
 }
 
-.search-result-list li: not(: last-child) {
+.search-result-list li:not(:last-child) {
     border-bottom: .1rem solid #999
 }
 
@@ -1258,11 +1259,11 @@ button {
     text-decoration: none
 }
 
-.article-nav-link: first-child {
+.article-nav-link:first-child {
     float: left
 }
 
-.article-nav-link: last-child {
+.article-nav-link:last-child {
     float: right;
     text-align: right
 }
@@ -1477,7 +1478,7 @@ a.toc-link {
     max-width: 100%
 }
 
-.article-gallery-img: first-child {
+.article-gallery-img:first-child {
     display: block
 }
 
@@ -1668,7 +1669,7 @@ a.toc-link {
     padding: 4.5rem 0
 }
 
-.articles .article: not(: last-child) {
+.articles .article:not(:last-child) {
     border-bottom: .1rem solid #ddd
 }
 
@@ -1707,11 +1708,11 @@ a.toc-link {
     clear: both
 }
 
-.archives-wrap: first-child {
+.archives-wrap:first-child {
     margin-top: 3rem
 }
 
-.archives-wrap: last-child {
+.archives-wrap:last-child {
     margin-bottom: 3rem
 }
 
