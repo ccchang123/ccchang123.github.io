@@ -34,7 +34,7 @@ function webload() {
 	item.style.borderRadius = '5px';
 	item.style.display = 'flex';
 	item.style.justifyContent = 'left';
-	item.style.alignItems = 'center';
+	item.style.alignItems = 'flex-start';
 	item.style.flexDirection = 'row';
 	document.querySelector('.ri-heart-fill').remove()
 	document.querySelector('.notice-content').remove()
@@ -45,6 +45,7 @@ function reqOnload() {
 	try {
 		var motd_html = data.motd.html.toString();
 		var players = data.players.online;
+		var max_players = data.players.max;
 		var icon = data.icon;
 	}
 	catch (e) {
@@ -58,14 +59,25 @@ function reqOnload() {
 
 	var div_motd = document.createElement('div');
 	div_motd.id = 'motd'
-	div_motd.style = 'margin-left: 1rem'
+	div_motd.style = 'margin-left: 1rem; margin-right: auto; font-size: 1.9rem'
 	div_motd.innerHTML = motd_html.replace(',','<br>');
 	item.appendChild(div_motd)
 
 	var div_online = document.createElement('div');
-
 	div_online.id = 'online'
+	div_online.style = 'display: flex; justify-content: right; align-items: center; flex-direction: row'
 	item.appendChild(div_online)
+
+	const online = document.querySelector('#online');
+	var div_online = document.createElement('div');
+	var div_img = document.createElement('img');
+	div_online.innerHTML = `<span style="color:#AAAAAA;">${players}</span><span style="color:#555555;">/</span><span style="color:#AAAAAA;">${max_players}</span>` 
+	div_online.style = 'width: auto; margin-left: 1rem; font-size: 1.9rem'
+	div_img.id = 'online_img'
+	div_img.src = '/images/online.png';
+	div_img.style = 'width: 2.5rem; margin-left: 0.6rem';
+	online.appendChild(div_online)
+	online.appendChild(div_img)
 }
 
 function reqError(err) {
