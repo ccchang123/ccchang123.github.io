@@ -15,3 +15,61 @@ document.oncut = () => {
 document.oncontextmenu = () => {
     return false
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+		webload()
+        var request = new XMLHttpRequest();
+        request.open('get', 'https://api.mcsrvstat.us/2/cocobeen.net', true);
+        request.send();
+        request.onload = reqOnload;
+        request.onerror = reqError;
+});
+
+const item = document.querySelector('.notice');
+
+function webload() {
+	item.style.backgroundColor = '#000000';
+	item.style.padding = '10px 5px';
+	item.style.border = 'none';
+	item.style.borderRadius = '5px';
+	item.style.display = 'flex';
+	item.style.justifyContent = 'left';
+	item.style.alignItems = 'center';
+	item.style.flexDirection = 'row';
+	document.querySelector('.ri-heart-fill').remove()
+	document.querySelector('.notice-content').remove()
+}
+
+function reqOnload() {
+	const data = JSON.parse(this.responseText);
+	try {
+		var motd_html = data.motd.html.toString();
+		var players = data.players.online;
+		var icon = data.icon;
+	}
+	catch (e) {
+		reqError(e);
+	}
+	var div_img = document.createElement('img');
+	div_img.id = 'img'
+	div_img.src = icon;
+	div_img.style = 'width: 64px';
+	item.appendChild(div_img)
+
+	var div_motd = document.createElement('div');
+	div_motd.id = 'motd'
+	div_motd.style = 'margin-left: 1rem'
+	div_motd.innerHTML = motd_html.replace(',','<br>');
+	item.appendChild(div_motd)
+
+	var div_online = document.createElement('div');
+
+	div_online.id = 'online'
+	item.appendChild(div_online)
+}
+
+function reqError(err) {
+	const img = document.querySelector('#img');
+	img.remove()
+	item.innerHTML = '<p style="color: white; font-size: 1.6rem">網路發生錯誤，請稍後再試</p>'
+}
