@@ -82,4 +82,5 @@ function reqOnload() {
 
 function reqError(err) {
 	item.innerHTML = '<p style="color: white; font-size: 1.6rem">網路發生錯誤，請稍後再試</p>'
+	document.querySelector('#img').remove()
 }
