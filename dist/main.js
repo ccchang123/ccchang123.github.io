@@ -17,7 +17,6 @@ document.oncontextmenu = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-	webload()
 	var request = new XMLHttpRequest();
 	request.open('get', 'https://api.mcsrvstat.us/2/cocobeen.net', true);
 	request.send();
@@ -26,19 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const item = document.querySelector('.notice');
-
-function webload() {
-	item.style.backgroundColor = '#000000';
-	item.style.padding = '10px';
-	item.style.border = 'none';
-	item.style.borderRadius = '5px';
-	item.style.display = 'flex';
-	item.style.justifyContent = 'left';
-	item.style.alignItems = 'flex-start';
-	item.style.flexDirection = 'row';
-	document.querySelector('.ri-heart-fill').remove()
-	document.querySelector('.notice-content').remove()
-}
 
 function reqOnload() {
 	const data = JSON.parse(this.responseText);
@@ -50,6 +36,7 @@ function reqOnload() {
 	}
 	catch (e) {
 		reqError(e);
+		return;
 	}
 	var div_img = document.createElement('img');
 	div_img.id = 'img'
@@ -81,6 +68,23 @@ function reqOnload() {
 }
 
 function reqError(err) {
-	item.innerHTML = '<p style="color: white; font-size: 1.6rem">網路發生錯誤，請稍後再試</p>'
-	document.querySelector('#img').remove()
+	var div_motd = document.createElement('p');
+	div_motd.id = 'motd'
+	div_motd.style = 'color: #FF5555; margin-left: 1rem; margin-right: auto; font-size: 1.9rem'
+	div_motd.innerHTML = '網路發生錯誤，請稍後再試';
+	item.appendChild(div_motd)
+	var div_offline = document.createElement('div');
+	div_offline.id = 'offline'
+	div_offline.style = 'display: flex; justify-content: right; align-items: center; flex-direction: row'
+	item.appendChild(div_offline)
+	const offline = document.querySelector('#offline');
+	var div_offline = document.createElement('div');
+	var div_img = document.createElement('img');
+	div_offline.innerHTML = `<span style="color:#AAAAAA;">0</span><span style="color:#555555;">/</span><span style="color:#AAAAAA;">0</span>` 
+	div_offline.style = 'width: auto; margin-left: 1rem; font-size: 1.9rem'
+	div_img.id = 'offline_img'
+	div_img.src = '/images/offline.png';
+	div_img.style = 'width: 2.5rem; margin-left: 0.6rem';
+	offline.appendChild(div_offline)
+	offline.appendChild(div_img)
 }
