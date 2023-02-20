@@ -84,8 +84,9 @@
   <section class="outer">
   
   
-  
-<div class="notice" style="margin-top:50px">
+  <textarea id="copy" style="position:absolute;left:-99999px">cocobeen.net</textarea>
+
+<div class="notice" style="margin-top:50px" onclick="copy_ip()">
 </div>
 
 
@@ -102,6 +103,9 @@
 		align-items: flex-start;
 		flex-direction: row;
     }
+	.notice:hover {
+		cursor: pointer;
+	}
 </style>
 
   
@@ -162,7 +166,7 @@
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">上一頁</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">下一頁</a>
+    <a class="extend prev" rel="prev" href="/">上一頁</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">下一頁</a>
   </nav>
   
 </section>
