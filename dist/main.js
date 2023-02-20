@@ -17,19 +17,19 @@ document.oncontextmenu = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-		webload()
-        var request = new XMLHttpRequest();
-        request.open('get', 'https://api.mcsrvstat.us/2/cocobeen.net', true);
-        request.send();
-        request.onload = reqOnload;
-        request.onerror = reqError;
+	webload()
+	var request = new XMLHttpRequest();
+	request.open('get', 'https://api.mcsrvstat.us/2/cocobeen.net', true);
+	request.send();
+	request.onload = reqOnload;
+	request.onerror = reqError;
 });
 
 const item = document.querySelector('.notice');
 
 function webload() {
 	item.style.backgroundColor = '#000000';
-	item.style.padding = '10px 5px';
+	item.style.padding = '10px';
 	item.style.border = 'none';
 	item.style.borderRadius = '5px';
 	item.style.display = 'flex';
