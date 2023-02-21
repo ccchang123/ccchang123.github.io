@@ -104,7 +104,7 @@ function copy_ip() {
     document.execCommand('copy');
 	copy = false
     setTimeout(function() {
-        alert("已成功複製到剪貼簿");
+        alert("伺服器連線位置已複製到剪貼簿內\n您現在可以複製進遊戲內進行連線");
         }, 100
     );
 }

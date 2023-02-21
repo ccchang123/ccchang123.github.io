@@ -1865,7 +1865,8 @@ a.toc-link {
 .footer .outer>ul {
     position: relative;
     display: flex;
-    justify-content: center
+    justify-content: center;
+	font-size: 1.1rem
 }
 
 .footer .outer>ul li {
