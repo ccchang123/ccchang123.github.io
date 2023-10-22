@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <title>使用條款 | 無規則伺服器</title>
+    <meta name="author" content="Chang Yu-Hsi." />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>載入過慢請開啟快取 瀏覽器預設開啟</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>無規則伺服器</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;首頁</span>
+        </a>
+        
+        <a href="/NoRule">
+            <i class="fa-solid fa-khanda fa-fw"></i>
+            <span>&ensp;無規則分流</span>
+        </a>
+        
+        <a href="/Survive">
+            <i class="fa-solid fa-tree-city fa-fw"></i>
+            <span>&ensp;生存分流</span>
+        </a>
+        
+        <a href="/Old">
+            <i class="fa-solid fa-person-cane fa-fw"></i>
+            <span>&ensp;養老分流</span>
+        </a>
+        
+        <a href="/terms">
+            <i class="fa-solid fa-file-circle-exclamation fa-fw"></i>
+            <span>&ensp;使用條款</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://discord.com/invite/mfZEZeCeqa">
+            <i class="fa-solid fa-discord fa-fw"></i>
+            <span>&ensp;Discord</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;無規則伺服器</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">首頁</div>
+                    </div>
+                </a>
+                
+                <a href="/NoRule">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-khanda fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">無規則分流</div>
+                    </div>
+                </a>
+                
+                <a href="/Survive">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tree-city fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">生存分流</div>
+                    </div>
+                </a>
+                
+                <a href="/Old">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-person-cane fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">養老分流</div>
+                    </div>
+                </a>
+                
+                <a href="/terms">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-file-circle-exclamation fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">使用條款</div>
+                    </div>
+                </a>
+                
+                <a target="_blank" rel="noopener" href="https://discord.com/invite/mfZEZeCeqa">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-discord fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Discord</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>使用條款</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/10/15
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="網站使用條款-法律資訊與聲明"><a href="#網站使用條款-法律資訊與聲明" class="headerlink" title="網站使用條款 法律資訊與聲明"></a>網站使用條款 法律資訊與聲明</h1><h3 id="網站所有權；使用條款之同意"><a href="#網站所有權；使用條款之同意" class="headerlink" title="網站所有權；使用條款之同意"></a>網站所有權；使用條款之同意</h3><p>本使用條款和條件(下稱「使用條款」)適用於位於 mc.norule.me 的 無規則伺服器網站，以及其他連結至 mc.norule.me 的所有相關網站(通稱「本網站」)。本網站為無規則伺服器(下稱「本伺服器」) 及其製作者之財產。凡使用本網站，即代表您同意本使用條款。若您不同意，請勿使用本網站。</p>
+<p>本伺服器有權隨時自行決定變更、修改、增加或移除本使用條款任何內容。您應自行負責定期檢查本使用條款是否有變更。凡在變更公告後繼續使用本網站，即代表您接受並同意此等變更。在您遵守本使用條款的前提下，本伺服器授予您個人、非專屬、不可轉讓、有限之權利得進入並使用本網站。</p>
+<h3 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h3><p>本網站上所有文字、圖表、使用者介面、視覺介面、照片、商標、標誌、繪稿和電腦程式碼(合稱「內容」)，包括但不限於此等內容之設計、結構、選擇、協調、表現、「視覺感受」以及配置，均為本伺服器所擁有、控制或授權，且受到商業包裝外觀、著作權、專利與商標法律，以及各種其他智慧財產權與不當競爭法律保護。</p>
+<p>除非本使用條款另有明確規定，未經本伺服器事前明示書面同意，本網站及內容之任何部分均不得以任何方式(包括以「鏡像」方式)複製、重製、重新發表、上傳、張貼、公開展示、編碼、翻譯、傳輸或散布至任何其他電腦、伺服器、網站或是其他用以發表或散布之媒介，或是為任何商業企業進行此等行為。</p>
+<h3 id="您對本網站之使用"><a href="#您對本網站之使用" class="headerlink" title="您對本網站之使用"></a>您對本網站之使用</h3><p>您同意不以任何方式重製或規避本網站或任何內容的導覽結構或版面，藉以透過本網站並未允許的任何方式，取得或意圖取得任何材料、文件或資訊。本伺服器有權禁止此等行為。</p>
+<p>您同意不探查、掃描或測試本網站或與本網站連結之網路的弱點，亦同意不破壞本網站或本網站所連結網路的安全或認證措施。</p>
+<p>您同意不採取任何行動，導致本網站、本伺服器系統或網路、任何與本網站或本伺服器相連系統或網路的基礎架構，承受不合理或不成比例的巨量負載。</p>
+<p>您同意不使用任何裝置、軟體或程序，干擾或試圖干擾本網站的正常運作或於本網站進行之任何交易，或他人對本網站之使用。</p>
+<p>您不得使用本網站或任何內容進行非法或本使用條款所禁止之目的，或鼓吹任何非法活動或其他侵害本伺服器或他人權利之活動。</p>
+<h3 id="隱私權"><a href="#隱私權" class="headerlink" title="隱私權"></a>隱私權</h3><p>使用本網站亦代表您確認並同意 Internet 傳輸並非完全安全且隱密。您了解他人可能讀取或攔截您向本網站傳送的訊息或資訊，即使有特殊通知指出特定傳輸 (例如信用卡資訊) 已經加密亦同。</p>
+<h3 id="連結至第三方網站"><a href="#連結至第三方網站" class="headerlink" title="連結至第三方網站"></a>連結至第三方網站</h3><p>本網站可能包含前往其他獨立第三人網站(「連結網站」)的連結。此類連結網站，僅為本網站訪客之方便而提供。</p>
+<p>此等連結網站不受本伺服器控制，而本伺服器對此等連結網站的內容，包括其中任何資訊或資料，亦不負責且不予以背書。</p>
+<p>使用此類連結網站時，請運用您的自主判斷能力。</p>
+<h3 id="免責聲明"><a href="#免責聲明" class="headerlink" title="免責聲明"></a>免責聲明</h3><p>您瞭解本伺服器非 Minecraft 官方產品。本伺服器內容未經 Mojang AB 批准或無關。</p>
+<p>本伺服器無法保證本網站或其任何內容、服務或功能完全無錯誤或不中斷，或任何瑕疵將獲得修正，或您使用本網站時可獲得特定結果。本網站及其內容係按「現狀」，於「可用範圍」內提供。本網站所提供之一切資訊均可能變更，恕不另行通知。拒絕承擔任何明示或默示擔保，包括精確性、不侵權、適售性以及符合特定用途之擔保責任。針對與您使用本網站及(或)任何本伺服器服務相關之任何第三人作為、不作為與行為，本伺服器一概不負任何責任。您應自行承擔您使用本網站及任何連結網站之完整責任。若您對本網站或其任何內容不滿意，您僅得停止使用本網站或任何此等內容；您對本伺服器並無其他救濟途徑。本救濟限制係雙方之間協商內容的一部分。</p>
+<p>以上免責聲明適用於因任何無法執行、錯誤、疏失、中斷、刪除、瑕疵、運作或傳輸延誤、電腦病毒、通訊連線失敗、存取遭竊、存取損壞、未經授權存取、變更或使用而導致之任何損害、責任或人身傷害，無論係基於違約、侵權或其他索賠主張。</p>
+<p>本伺服器有權隨時進行以下事項，恕不另行通知：(1) 基於任何理由而修改、暫停或終止本網站或其任何部分之運作或存取；(2) 修改或變更本網站或其任何部分以及相關政策或條款；以及 (3) 在必要情況下中斷本網站或其任何部分之運作，以利進行定期或非定期維護、錯誤更正或其他變更。</p>
+<h3 id="賠償"><a href="#賠償" class="headerlink" title="賠償"></a>賠償</h3><p>您同意，若因您使用本網站或其相關因素，導致任何第三人對本伺服器提出任何要求、損失、責任、索賠或花費 (包括律師費)，您將負擔一切賠償，並保護本伺服器、其開發人員、使用者、玩家免於承擔相關損害。</p>
+<h3 id="違反本使用條款"><a href="#違反本使用條款" class="headerlink" title="違反本使用條款"></a>違反本使用條款</h3><p>您同意，若本伺服器判斷您違反本使用條款或與您使用本網站相關之其他協議或方針，本伺服器得全權酌定終止您對本網站之存取權限，及(或)阻擋您未來對本網站之存取權限，無需事前通知。您亦同意，若您違反本使用條款，將構成非法而不公平的商業行為，並對本伺服器造成不可彌補的損害，使本伺服器承受無法估計的之金錢傷害；且您同意本伺服器得就此等情況按其認為必要或適合的方式，取得禁制令或衡平法救濟。除前述救濟途徑外，本伺服器亦享有法律或衡平法之其他救濟途徑。</p>
+<p>您同意，若有下列情事 (包括但不限於)，本伺服器無需事前通知，得全權裁量並終止您存取本網站之權利：(1) 經執法機關或其他政府機關要求，(2) 本網站或是由本網站所提供或透過本網站提供的服務停止或經重大修改，或 (3) 不可預期的技術問題。</p>
+<p>若您違反本使用條款而本伺服器未對您採取任何法律行動，則除本伺服器享有之任何其他救濟外，本伺服器將有權要求您支付，且您同意支付此等法律行動之合理律師費與成本。您同意，若因違反本使用條款而使存取本網站權限遭終止，本伺服器一概不對您或任何第三人負任何責任。</p>
+<h3 id="準據法、爭議解決"><a href="#準據法、爭議解決" class="headerlink" title="準據法、爭議解決"></a>準據法、爭議解決</h3><p>您同意就您存取或使用本網站相關事宜，包括所有爭議，不論法律是否有所衝突，將由中華民國法律管轄。</p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            Copyrights © 2023, 無規則伺服器.
+        </div>
+        <div>
+            NoRule Minecraft Server, Chang Yu-Hsi.
+        </div>
+        <div>
+            All rights reserved.
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+
+    
+</body>
+</html>
