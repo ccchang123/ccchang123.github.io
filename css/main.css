@@ -1,3 +1,38 @@
+@keyframes rainbow {
+    0%{
+        text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+        color: red;
+    }
+    14.28% {
+        text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+        color: orange;
+    }
+    28.56% {
+        text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+        color: yellow;
+    }
+    42.84% {
+        text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+        color: green;
+    }
+    57.12% {
+        text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+        color: blue;
+    }
+    71.4% {
+        text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+        color: #4B0082;
+    }
+    85.68% {
+        text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+        color: purple;
+    }
+    100% {
+        text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+        color: white;
+    }
+}
+
 #archives {
     margin: auto;
     margin-top: 100px;
