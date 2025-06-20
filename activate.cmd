@@ -2019,8 +2019,8 @@ echo:
 if %_unattended%==1 timeout /t 2 & exit /b
 
 if defined fixes (
-call :dk_color %White% "Follow ALL the ABOVE blue lines.   "
-call :dk_color2 %Blue% "Press [1] to Open Support Webpage " %Gray% " Press [0] to Ignore"
+call :dk_color %White% "請按照以上所有步驟操作。"
+call :dk_color2 %Blue% "按 [1] 開啟支援網頁 " %Gray% " 按 [0] 忽略"
 choice /C:10 /N
 if !errorlevel!==2 exit /b
 if !errorlevel!==1 (start %selfgit% & start %github% & for %%# in (%fixes%) do (start %%#))
@@ -2030,7 +2030,7 @@ if defined terminal (
 call :dk_color %_Yellow% "Press [0] key to %_exitmsg%..."
 choice /c 0 /n
 ) else (
-call :dk_color %_Yellow% "Press any key to %_exitmsg%..."
+call :dk_color %_Yellow% "按任意鍵%_exitmsg%..."
 pause %nul1%
 )
 
@@ -2341,17 +2341,17 @@ if "%o16c2r%%o15c2r%%o16msi%%o15msi%%o14msi%"=="" (
 set error=1
 echo:
 if not "%o14c2r%%o16uwp%"=="" (
-call :dk_color %Red% "Checking Supported Office Install       [Not Found]"
+call :dk_color %Red% "檢查支援的 Office 安裝             [未找到]"
 ) else (
-call :dk_color %Red% "Checking Installed Office               [Not Found]"
+call :dk_color %Red% "檢查已安裝的 Office                [未找到]"
 )
 
 if defined ohub (
 echo:
-echo You only have the Office Dashboard app installed. You need to install the full version of Office.
+echo 您僅安裝了 Office 控制面板。您需要安裝完整版 Office。
 )
 echo:
-call :dk_color %Blue% "Download and install Office from the below URL and then try again."
+call :dk_color %Blue% "從以下連結下載並安裝 Office，然後再試一次。"
 echo:
 set fixes=%fixes% %mas%genuine-installation-media
 call :dk_color %_Yellow% "%mas%genuine-installation-media"
@@ -13457,7 +13457,7 @@ echo ====== Error ======
 echo:
 echo This file is supposed to be run only by the scheduled task.
 echo:
-echo Press any key to exit
+echo 按任意鍵離開
 pause >nul
 exit /b
 )
@@ -16912,7 +16912,7 @@ if defined terminal (
 call :dk_color %_Yellow% "Press [0] to continue..."
 choice /c 0 /n
 ) else (
-call :dk_color %_Yellow% "Press any key to continue..."
+call :dk_color %_Yellow% "按任意鍵繼續..."
 pause %nul1%
 )
 )
@@ -17141,7 +17141,7 @@ if defined terminal (
 call :dk_color %_Yellow% "Press [0] key to %_exitmsg%..."
 choice /c 0 /n
 ) else (
-call :dk_color %_Yellow% "Press any key to %_exitmsg%..."
+call :dk_color %_Yellow% "按任意鍵%_exitmsg%..."
 pause %nul1%
 )
 goto :at_menu
@@ -19158,18 +19158,18 @@ call :oe_tempcleanup
 
 echo:
 if defined fixes (
-call :dk_color %White% "Follow ALL the ABOVE blue lines.   "
-call :dk_color2 %Blue% "Press [1] to Open Support Webpage " %Gray% " Press [0] to Ignore"
+call :dk_color %White% "請按照以上所有步驟操作。"
+call :dk_color2 %Blue% "按 [1] 開啟支援網頁 " %Gray% " 按 [0] 忽略"
 choice /C:10 /N
 if !errorlevel!==2 goto :oemenu
 if !errorlevel!==1 (start %selfgit% & start %github% & for %%# in (%fixes%) do (start %%#))
 )
 
 if defined terminal (
-call :dk_color %_Yellow% "Press [0] key to go back..."
+call :dk_color %_Yellow% "按 [0] 返回..."
 choice /c 0 /n
 ) else (
-call :dk_color %_Yellow% "Press any key to go back..."
+call :dk_color %_Yellow% "按任意鍵返回..."
 pause %nul1%
 )
 goto :oemenu
